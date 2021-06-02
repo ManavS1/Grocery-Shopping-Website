@@ -1,0 +1,11 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-shadow: 0;
+}
+
+body{
+    font-family: 'open sans', Arial, Helvetica, sans-serif;
+}
+
+/* ************************Utility Class*********************** */
