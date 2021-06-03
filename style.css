@@ -1,11 +1,91 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-shadow: 0;
+* {
+  padding: 0;
+  margin: 0;
+  box-shadow: 0;
 }
 
-body{
-    font-family: 'open sans', Arial, Helvetica, sans-serif;
+:root {
+  --primary: #eebf00;
+  --secondary: #232b38;
+  --ternary: #6c6c6c;
+  --danger: #fe4545;
+  --pure: #fefefe;
+  --light: #f0f0f0;
+  --heaven: #ffffff;
+  --footer: #2d333f;
+}
+
+body {
+  height: 300vw;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+body::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 72, 0.89);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--danger);
+  border-radius: 8px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+body {
+  font-family: "open sans", Arial, Helvetica, sans-serif;
 }
 
 /* ************************Utility Class*********************** */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  /* border: 1px solid black; */
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-justwin {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+/* ************************Header Styling************************ */
+
+.top-option {
+  background-color: var(--secondary);
+  padding: 0.4rem 0;
+}
+
+.header-icon a {
+  padding: 0 0.4rem;
+}
+
+.auth span {
+  color: white;
+}
+
+.auth img{
+    margin: 0 0.4rem;
+    color: white;
+}
+.auth span{
+    margin: 0 0.4rem;
+    color: white;
+}
+
+.auth a{
+    margin: 0 0.4rem;
+    color: white;
+}
+
+/* ******************************Nav Styling************************** */
+
