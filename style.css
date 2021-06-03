@@ -1,4 +1,6 @@
-* {
+*,
+*::after,
+*::before {
   padding: 0;
   margin: 0;
   box-shadow: 0;
@@ -13,10 +15,6 @@
   --light: #f0f0f0;
   --heaven: #ffffff;
   --footer: #2d333f;
-}
-
-body {
-  height: 300vw;
 }
 
 body::-webkit-scrollbar {
@@ -54,6 +52,13 @@ body {
   justify-content: space-between;
 }
 
+.flex-justaround {
+  justify-content: space-around;
+}
+.flex-justcenter {
+  justify-content: center;
+}
+
 .align-center {
   align-items: center;
 }
@@ -73,19 +78,51 @@ body {
   color: white;
 }
 
-.auth img{
-    margin: 0 0.4rem;
-    color: white;
+.auth img {
+  margin: 0 0.4rem;
+  color: white;
 }
-.auth span{
-    margin: 0 0.4rem;
-    color: white;
+.auth span {
+  margin: 0 0.4rem;
+  color: white;
 }
 
-.auth a{
-    margin: 0 0.4rem;
-    color: white;
+.auth a {
+  margin: 0 0.4rem;
+  color: white;
 }
 
 /* ******************************Nav Styling************************** */
+
+.navbar {
+  padding: 1.5rem 0;
+}
+
+.box-one img,
+.box-two img {
+  margin-right: 1rem;
+}
+
+.inner-box-one p,
+.inner-box-two p:first-child {
+  font-weight: bolder;
+}
+
+.navbar-items {
+  position: relative;
+  box-shadow: 0 0rem 1rem 0.2rem grey;
+}
+
+.navbar-items a {
+  padding: 1rem 2rem;
+  transition: all 0.4s ease;
+  z-index: 2;
+}
+.navbar-items a:hover {
+  background-color: var(--primary);
+}
+
+.active {
+  background-color: var(--primary);
+}
 
