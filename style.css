@@ -11,20 +11,20 @@
   --secondary: #232b38;
   --ternary: #6c6c6c;
   --danger: #fe4545;
-  --pure: #fefefe;
+  --pure: #ffffff;
   --light: #f0f0f0;
-  --heaven: #ffffff;
+  --heaven: #f0f0f0;
   --footer: #2d333f;
 }
 
 body::-webkit-scrollbar {
-  width: 12px;
+  width: 8px;
 }
 body::-webkit-scrollbar-track {
-  background-color: rgba(255, 255, 72, 0.89);
+  background-color: var(--ternary);
 }
 body::-webkit-scrollbar-thumb {
-  background-color: var(--danger);
+  background-color: #000;
   border-radius: 8px;
 }
 
@@ -61,6 +61,40 @@ body {
 
 .align-center {
   align-items: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.btn-primary {
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid transparent;
+  background-color: var(--primary);
+  color: var(--pure);
+  font-weight: bold;
+  transition: all 0.4s ease;
+}
+
+.btn-secondary {
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid transparent;
+  background-color: var(--secondary);
+  color: var(--pure);
+  font-weight: bold;
+  transition: all 0.4s ease;
+}
+
+.main-img {
+  display: block;
+  text-align: center;
+  width: 24rem;
+  margin: 0 auto;
+  padding: 0.8rem 0 3rem 0;
 }
 
 /* ************************Header Styling************************ */
@@ -126,3 +160,185 @@ body {
   background-color: var(--primary);
 }
 
+/* ********************************Hero Styling******************************* */
+
+.hero {
+  height: 550px;
+  background: url(images/hero.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-section {
+  height: 100%;
+}
+
+.left-section {
+  width: 60%;
+}
+.left-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+.left-section h1 span {
+  color: var(--primary);
+}
+
+.left-section p:nth-of-type(2) {
+  margin-bottom: 1rem;
+}
+
+.temp-span {
+  margin-right: 0.6rem;
+  font-weight: bold;
+}
+
+.hero-btn {
+  margin-right: 0.8rem;
+}
+
+.btn-primary:hover {
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  background-color: var(--pure);
+}
+.btn-secondary:hover {
+  border: 1px solid var(--secondary);
+  color: var(--secondary);
+  background-color: var(--pure);
+}
+
+/* ****************************Section styling****************************** */
+
+.top-products {
+  background-color: var(--heaven);
+  padding: 2rem 0;
+}
+
+.section-container h1 {
+  text-align: center;
+}
+
+.section-container img {
+  display: block;
+}
+
+/* .product-container{
+  width: 80%;
+  margin: 0 auto;
+} */
+
+.product-container .top-cards {
+  width: 20rem;
+  height: 25rem;
+  margin: 0 1rem;
+  background-color: var(--pure);
+  border-radius: 5px;
+  transition: all 0.2s ease-in;
+}
+
+.top-cards .plate-three {
+  width: 50%;
+  margin: 0 auto;
+  padding: 1.4rem 0;
+}
+
+.top-cards h2 {
+  text-align: center;
+}
+
+.rating img {
+  display: inline;
+  width: 1.3rem;
+}
+
+.rating {
+  width: 8rem;
+  margin: 0 auto;
+}
+
+.top-cards span {
+  display: block;
+  font-weight: bold;
+  text-align: center;
+}
+
+.special-btn {
+  width: 10rem;
+  margin: 0 auto;
+  padding: 0.2rem 0.2rem;
+  background-color: var(--primary);
+  border-radius: 3px;
+}
+.special-btn img {
+  width: 1.4rem;
+}
+
+.special-btn p {
+  display: inline-block;
+  padding: 0.2rem 1.5rem;
+  background-color: var(--pure);
+  border-radius: 3px;
+  transition: all 0.2s ease-in;
+}
+
+.special-btn p:hover {
+  background-color: var(--primary);
+}
+
+.top-cards h2,
+.top-cards .rating,
+.top-cards span,
+.top-cards .special-btn {
+  margin-bottom: 1rem;
+}
+
+.top-cards:hover{
+  box-shadow: 0 0 2rem 0 gray;
+}
+
+.card-btn{
+  width: 4rem;
+  margin:1.5rem auto 0 auto;
+}
+
+
+/* **************************Footer Styling***************************** */
+
+.footer-container{
+  background-color: var(--footer);
+}
+
+.footer-column{
+  color: var(--pure);
+  width: 30%;
+  margin: 1rem 1rem 0 0;
+  text-align: center;
+  padding:1rem 0;
+}
+
+.footer-column ul li, .footer-column p{
+  color: var(--pure);
+  list-style-type:none;
+  padding: 0.4rem 0;
+}
+
+.footer-column p{
+  padding: 0 2rem;
+}
+.footer-column ul li a{
+  color: var(--pure);
+}
+
+.horizontal-line{
+  height: 4px;
+  width: 90%;
+  margin:0.8rem auto;
+  background-color: var(--primary);
+}
+
+.footer-btn{
+  width: 6rem;
+  margin: 0.8rem auto;
+}
